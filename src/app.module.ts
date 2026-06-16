@@ -11,6 +11,9 @@ import { RolesModule } from './roles/roles.module';
 import { RolesService } from './roles/roles.service';
 import { CategoriesModule } from './categories/categories.module';
 import { ProductsModule } from './products/products.module';
+import { InventoryModule } from './inventory/inventory.module';
+import { DashboardModule } from './dashboard/dashboard.module';
+import { StockHistoryModule } from './stock-history/stock-history.module';
 
 @Module({
   imports: [
@@ -30,6 +33,9 @@ import { ProductsModule } from './products/products.module';
     RolesModule,
     CategoriesModule,
     ProductsModule,
+    InventoryModule,
+    DashboardModule,
+    StockHistoryModule,
   ],
   controllers: [AppController],
   providers: [AppService],
