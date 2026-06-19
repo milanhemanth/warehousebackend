@@ -24,6 +24,11 @@ export class Product {
   @Column('decimal')
   price!: number;
 
+  @Column({
+    nullable: true,
+  })
+  imageUrl!: string;
+
   @ManyToOne(
     () => Category,
     (category) => category.products,

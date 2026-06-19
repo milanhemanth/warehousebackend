@@ -50,6 +50,8 @@ export class ProductsService {
         quantity:
           createProductDto.quantity,
         price: createProductDto.price,
+        imageUrl:
+          createProductDto.imageUrl,
         category,
       });
 
@@ -100,7 +102,10 @@ export class ProductsService {
         updateProductDto.description,
       quantity:
         updateProductDto.quantity,
-      price: updateProductDto.price,
+      price:
+        updateProductDto.price,
+      imageUrl:
+        updateProductDto.imageUrl,
       category,
     });
 

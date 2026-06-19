@@ -22,4 +22,7 @@ export class CreateProductDto {
 
   @IsUUID()
   categoryId!: string;
+
+  @IsString()
+  imageUrl!: string;
 }
